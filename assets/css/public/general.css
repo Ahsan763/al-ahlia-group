@@ -1,0 +1,14 @@
+:root{
+    --main: #B52429;
+    --contrast: #FFEAEA;
+    --second-color: #D38787;
+    --third-color: #3B3B3B;
+    --fourth-color: #EFD9A7;
+    --fivth-color: #76CAFD;
+    --six-color: #CC3333;
+    --seventh-color: #EA4F25;
+    --eigth-color: #F0B900;
+}
+body{
+    font-family: var(--cairo);
+}

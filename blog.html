@@ -1,0 +1,937 @@
+<!doctype html>
+<html dir="rtl">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Blog</title>
+	<link rel="shortcut icon" href="assets/images/favicon.png">
+	<!-- font aweasome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer">
+	<!-- tailwind -->
+	<script src="https://cdn.tailwindcss.com"></script>
+	<!-- bootstrap 5.2.2 -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<link href="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/css/libs/animate.min.css" rel="stylesheet">
+	<!-- fonts -->
+	<link href="assets/fonts/fonts.css" rel="stylesheet">
+	<!-- Main Stylesheet File -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/public/effect-slicer.min.css" />
+	<link href="assets/css/public/ahsan.css" rel="stylesheet">
+	<link href="assets/css/public/style.css" rel="stylesheet">
+	<link href="assets/css/private/theme1-header1.css" rel="stylesheet">
+	<link href="assets/css/private/banner.css" rel="stylesheet">
+	<link href="assets/css/private/theme1-home-branches1.css" rel="stylesheet">
+	<link href="assets/css/private/theme1-home-about1.css" rel="stylesheet">
+	<link href="assets/css/private/theme1-home-services4.css" rel="stylesheet">
+	<link href="assets/css/private/theme1-home-clients1.css" rel="stylesheet">
+	<link href="assets/css/private/theme1-home-team1.css" rel="stylesheet">
+	<link href="assets/css/private/theme1-home-projects1.css" rel="stylesheet">
+	<link href="assets/css/private/theme1-home-faq1.css" rel="stylesheet">
+	<link href="assets/css/private/theme1-blog-news1.css" rel="stylesheet">
+	<link href="assets/css/private/theme1-blog-related1.css" rel="stylesheet">
+	<link href="assets/css/private/theme1-home-footer1.css" rel="stylesheet">
+
+	<link href="assets/css/public/general.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="app">
+		<header class="header">
+			<a href="/" class="logo flex-a">
+				<img src="assets/images/alahliya-logo.png" alt="" class="logo__img dark-none">
+				<img src="assets/images/al-ahliya-logo-white.png" alt="" class="logo__img d-none dark-show">
+			</a>
+			<div class="hdrtop">
+				<div class="container-fluid">
+					<div class="hdrtopWrpr flex-i justify-between">
+						<div class="hdrtopBox1 flex-i">
+							<div class="hdrtpBtn">
+								<i class="fa-solid fa-bars"></i>
+							</div>
+							<a href="#" class="hdrshpbtn flex-a">
+								<i class="fa-solid fa-store"></i>
+								تسوق الان
+							</a>
+						</div>
+						<div class="hdrtpBox2 flex-i">
+							<a href="mailto:info@alahliakitchens.ae" class="hdrmail flex-i">
+								info@alahliakitchens.ae
+								<i class="fa-solid fa-envelope"></i>
+							</a>
+							<div class="hdrtpBox2-mini flex-i">
+								<a href="tel:065621177" class="hdrtpclLink">065621177</a>
+								<a href="tel:065621177" class="hdrtpclLink">065621177</a>
+								<a href="tel:065621177" class="hdrtpclLink">065621177</a>
+								<div class="hdrtpBox2-minibox flex-a r-50">
+									<i class="fa-solid fa-phone"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hdrBtm">
+				<div class="container-fluid">
+					<div class="hdrBtm-wrpr flex-i justify-between">
+						<ul class="hdrBtmList flex-i">
+							<li class="hdrBtmList__item">
+								<a href="/" class="hdrBtmList__link">الرئيسية</a>
+							</li>
+							<li class="hdrBtmList__item">
+								<a href="about.html" class="hdrBtmList__link">من نحن</a>
+							</li>
+							<li class="hdrBtmList__item">
+								<a href="services.html" class="hdrBtmList__link">خدماتنا</a>
+							</li>
+							<li class="hdrBtmList__item">
+								<a href="team.html" class="hdrBtmList__link">فريق العمل</a>
+							</li>
+							<li class="hdrBtmList__item">
+								<a href="projects.html" class="hdrBtmList__link">مشاريع</a>
+							</li>
+							<li class="hdrBtmList__item">
+								<a href="blog.html" class="hdrBtmList__link active">المدونة</a>
+							</li>
+							<li class="hdrBtmList__item">
+								<a href="contact-us.html" class="hdrBtmList__link">اتصل بنا</a>
+							</li>
+						</ul>
+						<form class="searchform flex-i">
+							<input type="text" placeholder="ابحث هنا" class="searchform__input">
+							<button class="searchform__btn flex-a">
+								<i class="fa-solid fa-magnifying-glass"></i>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="hdrside">
+				<div class="hdrside__top flex-i justify-between">
+					<a href="/" class="hdrside__toplogo">
+						<img src="assets/images/al-ahliya-logo-white.png" alt="" class="hdrside__toplogo-img">
+					</a>
+					<div class="hdrside__topclose flex-a">
+						<i class="fa-solid fa-xmark"></i>
+					</div>
+				</div>
+				<div class="hdrsideBody">
+					<ul class="mobilelist">
+						<li class="hdrBtmList__item">
+							<a href="/" class="hdrBtmList__link active">الرئيسية</a>
+						</li>
+						<li class="hdrBtmList__item">
+							<a href="about.html" class="hdrBtmList__link">من نحن</a>
+						</li>
+						<li class="hdrBtmList__item">
+							<a href="services.html" class="hdrBtmList__link">خدماتنا</a>
+						</li>
+						<li class="hdrBtmList__item">
+							<a href="team.html" class="hdrBtmList__link">فريق العمل</a>
+						</li>
+						<li class="hdrBtmList__item">
+							<a href="projects.html" class="hdrBtmList__link">مشاريع</a>
+						</li>
+						<li class="hdrBtmList__item">
+							<a href="blog.html" class="hdrBtmList__link">المدونة</a>
+						</li>
+						<li class="hdrBtmList__item">
+							<a href="contact-us.html" class="hdrBtmList__link">اتصل بنا</a>
+						</li>
+					</ul>
+					<h6 class="hdrside__h">تابعنا على :</h6>
+					<ul class="smlist flex-i">
+						<li class="smlist__item">
+							<a href="#" class="smlist__link flex-a r-50">
+								<i class="fa-brands fa-youtube"></i>
+							</a>
+						</li>
+						<li class="smlist__item">
+							<a href="#" class="smlist__link flex-a r-50">
+								<i class="fa-brands fa-instagram"></i>
+							</a>
+						</li>
+						<li class="smlist__item">
+							<a href="#" class="smlist__link flex-a r-50">
+								<i class="fa-brands fa-twitter"></i>
+							</a>
+						</li>
+						<li class="smlist__item">
+							<a href="#" class="smlist__link flex-a r-50">
+								<i class="fa-brands fab fa-linkedin"></i>
+							</a>
+						</li>
+					</ul>
+					<div class="thmsett flex">
+						<div class="darklight">
+							<div class="flex-i gap-2 lightoff">
+								<div class="darklight__box">
+									<i class="fa-solid fa-lightbulb"></i>
+								</div>
+								<span class="llgt">النمط</span>
+							</div>
+							<div class="flex-i gap-2 lighton">
+								<div class="darklight__box lighton">
+									<i class="fa-regular fa-lightbulb"></i>
+								</div>
+								<span class="llgt">النمط</span>
+							</div>
+						</div>
+						<div class="lang flex-a">
+							<div class="arabic">
+								<div class="flex-i gap-2">
+									<div class="lang__box ">
+										<p class="lang__text">En</p>
+									</div>
+									<span class="llgt">اللغة</span>
+								</div>
+							</div>
+							<div class="english">
+								<div class="flex-i gap-2">
+									<div class="lang__box ">
+										<p class="lang__text">Ar</p>
+									</div>
+									<span class="llgt">اللغة</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="blogpagebanner">
+			<img src="assets/images/blog/blog-bg.png" alt="" class="blogpagebanner__img" data-aos="zoom-in"
+				data-aos-delay="50">
+		</div>
+		<div class="blogpagewrpr">
+			<div class="container">
+				<div class="blogpagecntnt">
+					<h2 class="blogpagecntnt__h">آخر الأخبار</h2>
+					<div class="blogpagecntnt-wrpr">
+						<div class="blogpagecntnt-box" data-aos="fade-up" data-aos-delay="50">
+							<div class="blogpagecntnt-box__hldr">
+								<img src="assets/images/blog/2.png" alt="" class="blogpagecntnt-box__img">
+								<div class="blogpagecntnt-box-ab">
+									<img src="assets/images/team1.png" alt="" class="blogpagecntnt-box-ab__img">
+									<h3 class="blogpagecntnt-box-ab__h">احمد الهاشمي</h3>
+								</div>
+							</div>
+							<div class="blogpagecntnt-box-body">
+								<a href="blog-details.html" class="blogpagecntnt-box-body__link">
+									5 أشياء يمكنك تجنبها عند تركيب معدات مطبخ جديد
+								</a>
+								<p class="blogpagecntnt-box-body-desc">
+									هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر
+								</p>
+								<div class="blogpagecntnt-box-body-wrpr flex-i justify-between">
+									<div class="blpgcnbxC1 flex-i">
+										<i class="fa-solid fa-comment-lines"></i>
+										<p class="blpgcnbxC1__p">30</p>
+									</div>
+									<div class="blpgcnbxC1 flex-i">
+										<i class="fa-solid fa-comment-lines"></i>
+										<p class="blpgcnbxC1__p">قبل ساعتين</p>
+									</div>
+									<div class="blpgcnbxC3 flex-i">
+										تركيب
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="blogpagecntnt-box" data-aos="fade-up" data-aos-delay="150">
+							<div class="blogpagecntnt-box__hldr">
+								<img src="assets/images/blog/1.png" alt="" class="blogpagecntnt-box__img">
+								<div class="blogpagecntnt-box-ab">
+									<img src="assets/images/team1.png" alt="" class="blogpagecntnt-box-ab__img">
+									<h3 class="blogpagecntnt-box-ab__h">احمد الهاشمي</h3>
+								</div>
+							</div>
+							<div class="blogpagecntnt-box-body">
+								<a href="blog-details.html" class="blogpagecntnt-box-body__link">
+									5 أشياء يمكنك تجنبها عند تركيب معدات مطبخ جديد
+								</a>
+								<p class="blogpagecntnt-box-body-desc">
+									هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر
+								</p>
+								<div class="blogpagecntnt-box-body-wrpr flex-i justify-between">
+									<div class="blpgcnbxC1 flex-i">
+										<i class="fa-solid fa-comment-lines"></i>
+										<p class="blpgcnbxC1__p">30</p>
+									</div>
+									<div class="blpgcnbxC1 flex-i">
+										<i class="fa-solid fa-comment-lines"></i>
+										<p class="blpgcnbxC1__p">قبل ساعتين</p>
+									</div>
+									<div class="blpgcnbxC3 flex-i">
+										تركيب
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="blogpagepostssection">
+			<div class="container">
+				<div class="blgpgwrpr">
+					<div class="blgpgwrprCol1">
+						<div class="blgpgwrprCol1Card">
+							<div class="blogBox2Card-hdr">
+								اخبار شائعة
+							</div>
+							<div class="blgpgwrprCol1CardNews">
+								<div class="blgpgwrprCol1CardNews__Hdr">
+									<img src="assets/images/blog/3.png" alt="almenhali news" class="blgpgwrprCol1CardNews__img">
+								</div>
+								<div class="blgpgwrprCol1CardNews__body">
+									<p class="blgpgwrprCol1CardNews_t">
+										هو ببساطة نص شكلي ويُستخدم في صناعات المطابع ودور النشر
+									</p>
+									<a href="blog-details.html" class="blgpgwrprCol1CardNews_t2">
+										المزيد
+									</a>
+								</div>
+							</div>
+							<div class="blgpgwrprCol1CardNews">
+								<div class="blgpgwrprCol1CardNews__Hdr">
+									<img src="assets/images/blog/4.png" alt="almenhali news" class="blgpgwrprCol1CardNews__img">
+								</div>
+								<div class="blgpgwrprCol1CardNews__body">
+									<p class="blgpgwrprCol1CardNews_t">
+										هو ببساطة نص شكلي ويُستخدم في صناعات المطابع ودور النشر
+									</p>
+									<a href="blog-details.html" class="blgpgwrprCol1CardNews_t2">
+										المزيد
+									</a>
+								</div>
+							</div>
+							<div class="blgpgwrprCol1CardNews">
+								<div class="blgpgwrprCol1CardNews__Hdr">
+									<img src="assets/images/blog/5.png" alt="almenhali news" class="blgpgwrprCol1CardNews__img">
+								</div>
+								<div class="blgpgwrprCol1CardNews__body">
+									<p class="blgpgwrprCol1CardNews_t">
+										هو ببساطة نص شكلي ويُستخدم في صناعات المطابع ودور النشر
+									</p>
+									<a href="blog-details.html" class="blgpgwrprCol1CardNews_t2">
+										المزيد
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="blgpgwrprCol1Card blgpgwrprCol1Card2">
+							<div class="blogBox2Card-hdr blogBox2Card-hdr1">
+								كلمات شائعة
+							</div>
+							<div class="tagsWpr">
+								<div class="tag">مطابخ</div>
+								<div class="tag">إستشارات</div>
+								<div class="tag">التدريب</div>
+								<div class="tag">تركيب</div>
+								<div class="tag">فنادق</div>
+							</div>
+						</div>
+						<div class="blgpgwrprCol1Card">
+							<div class="blogBox2Card-hdr blogBox2Card-hdr2 mb-0">
+								الآن على مواقع التواصل
+							</div>
+						</div>
+						<div class="smcrd">
+							<div class="blgpgwrprCol1CardNews">
+								<div class="blgpgwrprCol1CardNews__Hdr">
+									<img src="assets/images/blog/3.png" alt="almenhali news" class="blgpgwrprCol1CardNews__img">
+								</div>
+								<div class="blgpgwrprCol1CardNews__body">
+									<a href="#" class="blgpgwrprCol1CardNews_t">
+										هو ببساطة نص شكلي ويُستخدم في صناعات المطابع ودور النشر
+									</a>
+									<div class="flex tDetList-wrpr items-center gap-2">
+										<a href="#" class="tDetList-link">
+											<i class="fa-brands fa-facebook-f"></i>
+										</a>
+										<p class="tDetList-sl-t">فيسبوك</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="smcrd">
+							<div class="blgpgwrprCol1CardNews">
+								<div class="blgpgwrprCol1CardNews__Hdr">
+									<img src="assets/images/blog/3.png" alt="almenhali news" class="blgpgwrprCol1CardNews__img">
+								</div>
+								<div class="blgpgwrprCol1CardNews__body">
+									<a href="#" class="blgpgwrprCol1CardNews_t">
+										هو ببساطة نص شكلي ويُستخدم في صناعات المطابع ودور النشر
+									</a>
+									<div class="flex tDetList-wrpr items-center gap-2">
+										<a href="#" class="tDetList-link">
+											<i class="fa-brands fa-facebook-f"></i>
+										</a>
+										<p class="tDetList-sl-t">فيسبوك</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="blgpgwrprCol2">
+						<div class="blgpgwrprCol2-tab">
+							من اجلك
+						</div>
+						<div class="blgpgwrprCol2post"
+							style="background: url(assets/images/blog/9.png) no-repeat top center; background-size: cover;"
+							data-aos="zoom-in" data-aos-delay="50">
+							<div class="blgpgwrprCol2post-tab">تركيب</div>
+							<div class="blgpgwrprCol2post-btm">
+								<a href="blog-details.html" class="blgpgwrprCol2post-btm-h">
+									5 أشياء يمكنك تجنبها عندي تركيب مطبخ حديث
+								</a>
+								<div class="blgpgwrprCol2post-btm-hr"></div>
+								<div class="blgpgwrprCol2post-btm-wrpr flex-i justify-between">
+									<div class="blgpgwrprCol2post-btmcol flex-i gap-2">
+										<img src="assets/images/team1.png" alt="" class="blogpagecntnt-box-ab__img">
+										<h3 class="blogpagecntnt-box-ab__h">احمد الهاشمي</h3>
+									</div>
+									<div class="flex-i gap-1 blgpgwrprCol2post-btmcol2">
+										<i class="fa-solid fa-comment-lines"></i>
+										30
+									</div>
+									<div class="flex-i gap-1 blgpgwrprCol2post-btmcol2">
+										<i class="fa-solid fa-clock"></i>
+										قبل ساعتين
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="blgpgwrprCol2post"
+							style="background: url(assets/images/blog/3.png) no-repeat top center; background-size: cover;"
+							data-aos="zoom-in" data-aos-delay="150">
+							<div class="blgpgwrprCol2post-tab">تركيب</div>
+							<div class="blgpgwrprCol2post-btm">
+								<a href="blog-details.html" class="blgpgwrprCol2post-btm-h">
+									5 أشياء يمكنك تجنبها عندي تركيب مطبخ حديث
+								</a>
+								<div class="blgpgwrprCol2post-btm-hr"></div>
+								<div class="blgpgwrprCol2post-btm-wrpr flex-i justify-between">
+									<div class="blgpgwrprCol2post-btmcol flex-i gap-2">
+										<img src="assets/images/team1.png" alt="" class="blogpagecntnt-box-ab__img">
+										<h3 class="blogpagecntnt-box-ab__h">احمد الهاشمي</h3>
+									</div>
+									<div class="flex-i gap-1 blgpgwrprCol2post-btmcol2">
+										<i class="fa-solid fa-comment-lines"></i>
+										30
+									</div>
+									<div class="flex-i gap-1 blgpgwrprCol2post-btmcol2">
+										<i class="fa-solid fa-clock"></i>
+										قبل ساعتين
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="blgpgwrprCol2post"
+							style="background: url(assets/images/blog/5.png) no-repeat top center; background-size: cover;"
+							data-aos="zoom-in" data-aos-delay="250">
+							<div class="blgpgwrprCol2post-tab">تركيب</div>
+							<div class="blgpgwrprCol2post-btm">
+								<a href="blog-details.html" class="blgpgwrprCol2post-btm-h">
+									5 أشياء يمكنك تجنبها عندي تركيب مطبخ حديث
+								</a>
+								<div class="blgpgwrprCol2post-btm-hr"></div>
+								<div class="blgpgwrprCol2post-btm-wrpr flex-i justify-between">
+									<div class="blgpgwrprCol2post-btmcol flex-i gap-2">
+										<img src="assets/images/team1.png" alt="" class="blogpagecntnt-box-ab__img">
+										<h3 class="blogpagecntnt-box-ab__h">احمد الهاشمي</h3>
+									</div>
+									<div class="flex-i gap-1 blgpgwrprCol2post-btmcol2">
+										<i class="fa-solid fa-comment-lines"></i>
+										30
+									</div>
+									<div class="flex-i gap-1 blgpgwrprCol2post-btmcol2">
+										<i class="fa-solid fa-clock"></i>
+										قبل ساعتين
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="blogpagepostreltd" data-aos="fade-up" data-aos-delay="50">
+			<div class="container">
+				<div class="blogpagepostreltd-wrpr">
+					<div class="blgpgwrprCol2-tab">
+						إخترنا لك
+					</div>
+					<div class="blogpagepostreltd-sl flex swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="blgpagpstrltdCrd">
+									<div class="blgpagpstrltdCrdHdr">
+										<img src="assets/images/blog/1.png" alt="" class="blgpagpstrltdCrdHdr-img">
+									</div>
+									<a href="#" class="blgpagpstrltdCrd__link">
+										هو ببساطة نص شكلي ويُستخدم في صناعات المطابع ودور النشر
+									</a>
+									<div class="blgpagpstrltdCrd-wrpr flex-i justify-between">
+										<div class="blgpagpstrltdCrdcol1 flex-i">
+											<img src="assets/images/team1.png" alt="" class="blgpagpstrltdCrdcol1__img">
+											<h3 class="blgpagpstrltdCrdcol1__h">احمد الهاشمي</h3>
+										</div>
+										<div class="flex-i gap-1 blgpagpstrltdCrd-btmcol2">
+											<i class="fa-solid fa-comment-lines"></i>
+											30
+										</div>
+										<div class="flex-i gap-1 blgpagpstrltdCrd-btmcol2">
+											<i class="fa-solid fa-clock"></i>
+											قبل ساعتين
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="blgpagpstrltdCrd">
+									<div class="blgpagpstrltdCrdHdr">
+										<img src="assets/images/blog/2.png" alt="" class="blgpagpstrltdCrdHdr-img">
+									</div>
+									<a href="#" class="blgpagpstrltdCrd__link">
+										هو ببساطة نص شكلي ويُستخدم في صناعات المطابع ودور النشر
+									</a>
+									<div class="blgpagpstrltdCrd-wrpr flex-i justify-between">
+										<div class="blgpagpstrltdCrdcol1 flex-i">
+											<img src="assets/images/team1.png" alt="" class="blgpagpstrltdCrdcol1__img">
+											<h3 class="blgpagpstrltdCrdcol1__h">احمد الهاشمي</h3>
+										</div>
+										<div class="flex-i gap-1 blgpagpstrltdCrd-btmcol2">
+											<i class="fa-solid fa-comment-lines"></i>
+											30
+										</div>
+										<div class="flex-i gap-1 blgpagpstrltdCrd-btmcol2">
+											<i class="fa-solid fa-clock"></i>
+											قبل ساعتين
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="blgpagpstrltdCrd">
+									<div class="blgpagpstrltdCrdHdr">
+										<img src="assets/images/blog/3.png" alt="" class="blgpagpstrltdCrdHdr-img">
+									</div>
+									<a href="#" class="blgpagpstrltdCrd__link">
+										هو ببساطة نص شكلي ويُستخدم في صناعات المطابع ودور النشر
+									</a>
+									<div class="blgpagpstrltdCrd-wrpr flex-i justify-between">
+										<div class="blgpagpstrltdCrdcol1 flex-i">
+											<img src="assets/images/team1.png" alt="" class="blgpagpstrltdCrdcol1__img">
+											<h3 class="blgpagpstrltdCrdcol1__h">احمد الهاشمي</h3>
+										</div>
+										<div class="flex-i gap-1 blgpagpstrltdCrd-btmcol2">
+											<i class="fa-solid fa-comment-lines"></i>
+											30
+										</div>
+										<div class="flex-i gap-1 blgpagpstrltdCrd-btmcol2">
+											<i class="fa-solid fa-clock"></i>
+											قبل ساعتين
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="blgpagpstrltdCrd">
+									<div class="blgpagpstrltdCrdHdr">
+										<img src="assets/images/blog/4.png" alt="" class="blgpagpstrltdCrdHdr-img">
+									</div>
+									<a href="#" class="blgpagpstrltdCrd__link">
+										هو ببساطة نص شكلي ويُستخدم في صناعات المطابع ودور النشر
+									</a>
+									<div class="blgpagpstrltdCrd-wrpr flex-i justify-between">
+										<div class="blgpagpstrltdCrdcol1 flex-i">
+											<img src="assets/images/team1.png" alt="" class="blgpagpstrltdCrdcol1__img">
+											<h3 class="blgpagpstrltdCrdcol1__h">احمد الهاشمي</h3>
+										</div>
+										<div class="flex-i gap-1 blgpagpstrltdCrd-btmcol2">
+											<i class="fa-solid fa-comment-lines"></i>
+											30
+										</div>
+										<div class="flex-i gap-1 blgpagpstrltdCrd-btmcol2">
+											<i class="fa-solid fa-clock"></i>
+											قبل ساعتين
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="blgpagpstrltdCrd">
+									<div class="blgpagpstrltdCrdHdr">
+										<img src="assets/images/blog/5.png" alt="" class="blgpagpstrltdCrdHdr-img">
+									</div>
+									<a href="#" class="blgpagpstrltdCrd__link">
+										هو ببساطة نص شكلي ويُستخدم في صناعات المطابع ودور النشر
+									</a>
+									<div class="blgpagpstrltdCrd-wrpr flex-i justify-between">
+										<div class="blgpagpstrltdCrdcol1 flex-i">
+											<img src="assets/images/team1.png" alt="" class="blgpagpstrltdCrdcol1__img">
+											<h3 class="blgpagpstrltdCrdcol1__h">احمد الهاشمي</h3>
+										</div>
+										<div class="flex-i gap-1 blgpagpstrltdCrd-btmcol2">
+											<i class="fa-solid fa-comment-lines"></i>
+											30
+										</div>
+										<div class="flex-i gap-1 blgpagpstrltdCrd-btmcol2">
+											<i class="fa-solid fa-clock"></i>
+											قبل ساعتين
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="blgpagpstrltdCrd">
+									<div class="blgpagpstrltdCrdHdr">
+										<img src="assets/images/blog/8.png" alt="" class="blgpagpstrltdCrdHdr-img">
+									</div>
+									<a href="#" class="blgpagpstrltdCrd__link">
+										هو ببساطة نص شكلي ويُستخدم في صناعات المطابع ودور النشر
+									</a>
+									<div class="blgpagpstrltdCrd-wrpr flex-i justify-between">
+										<div class="blgpagpstrltdCrdcol1 flex-i">
+											<img src="assets/images/team1.png" alt="" class="blgpagpstrltdCrdcol1__img">
+											<h3 class="blgpagpstrltdCrdcol1__h">احمد الهاشمي</h3>
+										</div>
+										<div class="flex-i gap-1 blgpagpstrltdCrd-btmcol2">
+											<i class="fa-solid fa-comment-lines"></i>
+											30
+										</div>
+										<div class="flex-i gap-1 blgpagpstrltdCrd-btmcol2">
+											<i class="fa-solid fa-clock"></i>
+											قبل ساعتين
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="blgpagpstrltdCrd">
+									<div class="blgpagpstrltdCrdHdr">
+										<img src="assets/images/blog/9.png" alt="" class="blgpagpstrltdCrdHdr-img">
+									</div>
+									<a href="#" class="blgpagpstrltdCrd__link">
+										هو ببساطة نص شكلي ويُستخدم في صناعات المطابع ودور النشر
+									</a>
+									<div class="blgpagpstrltdCrd-wrpr flex-i justify-between">
+										<div class="blgpagpstrltdCrdcol1 flex-i">
+											<img src="assets/images/team1.png" alt="" class="blgpagpstrltdCrdcol1__img">
+											<h3 class="blgpagpstrltdCrdcol1__h">احمد الهاشمي</h3>
+										</div>
+										<div class="flex-i gap-1 blgpagpstrltdCrd-btmcol2">
+											<i class="fa-solid fa-comment-lines"></i>
+											30
+										</div>
+										<div class="flex-i gap-1 blgpagpstrltdCrd-btmcol2">
+											<i class="fa-solid fa-clock"></i>
+											قبل ساعتين
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-prev blgpagpstrltdCrdAr blgpagpstrltdCrdAr1 flex-a r-50">
+							<i class="fa-solid fa-chevron-right"></i>
+						</div>
+						<div class="swiper-button-next blgpagpstrltdCrdAr blgpagpstrltdCrdAr2 flex-a r-50">
+							<i class="fa-solid fa-chevron-left"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="ftrtop">
+				<div class="container-fluid">
+					<div class="ftrtop-wrpr">
+						<div class="ftrtopBox1">
+							<div class="ftrtopBox1-tab flex-a">
+								<i class="fa-solid fa-store"></i>
+								<h3 class="ftrtopBox1-tab__h">تسوق الان</h3>
+							</div>
+							<img src="assets/images/ftr2.png" alt="" class="ftrtopBox1__img">
+						</div>
+						<div class="ftrtopBox2-wrpr flex">
+							<div class="ftrtopBox2">
+								<h2 class="ftrtopBox2__h">تواصل معنا</h2>
+								<div class="ftrtopBoxInner">
+									<a href="tel:" class="ftrtopBoxInner__link">065621177</a>
+									<a href="tel:" class="ftrtopBoxInner__link">028870206</a>
+									<a href="tel:" class="ftrtopBoxInner__link">042392230</a>
+									<div class="ftrtopBoxInner-mini flex-a r-50">
+										<i class="fa-solid fa-phone"></i>
+									</div>
+								</div>
+							</div>
+							<div class="ftrtopBox2">
+								<h2 class="ftrtopBox2__h">راسلنا علي</h2>
+								<div class="ftrtopBoxInner">
+									<a href="mailto:" class="ftrtopBoxInner__link">info@example.com</a>
+									<div class="ftrtopBoxInner-mini flex-a r-50">
+										<i class="fa-solid fa-envelope-circle-check"></i>
+									</div>
+								</div>
+							</div>
+							<div class="ftrtopBox2">
+								<h2 class="ftrtopBox2__h">تابعنا علي</h2>
+								<div class="ftrtopBoxInner">
+									<ul class="ftrtplist">
+										<li class="ftrtplist__item">
+											<a href="#" class="ftrtplist__link flex-a r-50">
+												<i class="fa-brands fa-youtube"></i>
+											</a>
+										</li>
+										<li class="ftrtplist__item">
+											<a href="#" class="ftrtplist__link flex-a r-50">
+												<i class="fa-brands fa-linkedin"></i>
+											</a>
+										</li>
+										<li class="ftrtplist__item">
+											<a href="#" class="ftrtplist__link flex-a r-50">
+												<i class="fa-brands fa-instagram"></i>
+											</a>
+										</li>
+										<li class="ftrtplist__item">
+											<a href="#" class="ftrtplist__link flex-a r-50">
+												<i class="fa-brands fa-twitter"></i>
+											</a>
+										</li>
+										<li class="ftrtplist__item">
+											<a href="#" class="ftrtplist__link flex-a r-50">
+												<i class="fa-brands fa-facebook-f"></i>
+											</a>
+										</li>
+									</ul>
+									<div class="ftrtopBoxInner-mini flex-a r-50">
+										<i class="fa-solid fa-thumbs-up"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ftrcntr">
+				<div class="container-fluid">
+					<div class="ftrcntr-wrpr ">
+						<div class="ftrcntrBox1">
+							<div class="ftrcntrBox1logo">
+								<img src="assets/images/alahliya-logo.png" alt="">
+							</div>
+							<p class="ftrcntrBox1__p">
+								مجموعة الأهلية ، والتي ظهرت منها أكبر مجموعة مملوكة للقطاع الخاص وأكثرها تنوعًا في الدولة والتي تقدم
+								مجموعة واسعة من المنتجات والخدمات للشركات والمستهلكين على حد سواء ، مما يوسع نطاقها ينتشر في جميع أنحاء
+								البلاد.
+							</p>
+						</div>
+						<div class="ftrcntrBox2">
+							<h2 class="ftrcntrBox2__h">الأهلية</h2>
+							<ul class="ftrcntrBox2-list">
+								<li class="ftrcntrBox2-list__item">
+									<a href="/" class="ftrcntrBox2-list__link">الرئيسية</a>
+								</li>
+								<li class="ftrcntrBox2-list__item">
+									<a href="about.html" class="ftrcntrBox2-list__link">من نحن</a>
+								</li>
+								<li class="ftrcntrBox2-list__item">
+									<a href="services.html" class="ftrcntrBox2-list__link">خدماتنا</a>
+								</li>
+								<li class="ftrcntrBox2-list__item">
+									<a href="projects.html" class="ftrcntrBox2-list__link">المشاريع</a>
+								</li>
+								<li class="ftrcntrBox2-list__item">
+									<a href="team.html" class="ftrcntrBox2-list__link">فريق العمل</a>
+								</li>
+								<li class="ftrcntrBox2-list__item">
+									<a href="blog.html" class="ftrcntrBox2-list__link">المدونة</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="ftrcntrBox2">
+							<h2 class="ftrcntrBox2__h">مركز المساعدة</h2>
+							<ul class="ftrcntrBox2-list">
+								<li class="ftrcntrBox2-list__item">
+									<a href="contact-us.html" class="ftrcntrBox2-list__link">تواصل معنا</a>
+								</li>
+								<li class="ftrcntrBox2-list__item">
+									<a href="terms.html" class="ftrcntrBox2-list__link"> الشروط والأحكام </a>
+								</li>
+								<li class="ftrcntrBox2-list__item">
+									<a href="privacy-policy.html" class="ftrcntrBox2-list__link">سياسة الخصوصية</a>
+								</li>
+								<li class="ftrcntrBox2-list__item">
+									<a href="#" class="ftrcntrBox2-list__link">فروعنا</a>
+								</li>
+							</ul>
+						</div>
+						<div class="ftrcntrBox4">
+							<div class="ftrWrpr swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="ftrCrd">
+											<div class="ftrCrdbox">
+												<img src="assets/images/our-brnch1.png" alt="" class="ftrCrd__img">
+												<div class="ftrCrdboxContent">
+													<h1 class="ftrCrdboxContent__h">Showroom-1</h1>
+													<div class="ftrCrdboxContent-row flex-i justify-between">
+														<div class="ftrCrdboxContentbox1">
+															<div class="ftrCrdboxContentbox1-mini">
+																<img src="assets/images/abudhabi.png" alt="">
+															</div>
+															<h3 class="ftrCrdboxContentbox1__h">
+																شارع الفلاح
+															</h3>
+														</div>
+														<div class="ftrCrdboxContentbox2">
+															2013
+															<i class="fa-solid fa-calendar-days"></i>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="ftrCrd">
+											<div class="ftrCrdbox">
+												<img src="assets/images/our-brnch1.png" alt="" class="ftrCrd__img">
+												<div class="ftrCrdboxContent">
+													<h1 class="ftrCrdboxContent__h">Showroom-1</h1>
+													<div class="ftrCrdboxContent-row flex-i justify-between">
+														<div class="ftrCrdboxContentbox1">
+															<div class="ftrCrdboxContentbox1-mini">
+																<img src="assets/images/abudhabi.png" alt="">
+															</div>
+															<h3 class="ftrCrdboxContentbox1__h">
+																شارع الفلاح
+															</h3>
+														</div>
+														<div class="ftrCrdboxContentbox2">
+															2013
+															<i class="fa-solid fa-calendar-days"></i>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="ftrCrd">
+											<div class="ftrCrdbox">
+												<img src="assets/images/our-brnch1.png" alt="" class="ftrCrd__img">
+												<div class="ftrCrdboxContent">
+													<h1 class="ftrCrdboxContent__h">Showroom-1</h1>
+													<div class="ftrCrdboxContent-row flex-i justify-between">
+														<div class="ftrCrdboxContentbox1">
+															<div class="ftrCrdboxContentbox1-mini">
+																<img src="assets/images/abudhabi.png" alt="">
+															</div>
+															<h3 class="ftrCrdboxContentbox1__h">
+																شارع الفلاح
+															</h3>
+														</div>
+														<div class="ftrCrdboxContentbox2">
+															2013
+															<i class="fa-solid fa-calendar-days"></i>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="ftrCrd">
+											<div class="ftrCrdbox">
+												<img src="assets/images/our-brnch1.png" alt="" class="ftrCrd__img">
+												<div class="ftrCrdboxContent">
+													<h1 class="ftrCrdboxContent__h">Showroom-1</h1>
+													<div class="ftrCrdboxContent-row flex-i justify-between">
+														<div class="ftrCrdboxContentbox1">
+															<div class="ftrCrdboxContentbox1-mini">
+																<img src="assets/images/abudhabi.png" alt="">
+															</div>
+															<h3 class="ftrCrdboxContentbox1__h">
+																شارع الفلاح
+															</h3>
+														</div>
+														<div class="ftrCrdboxContentbox2">
+															2013
+															<i class="fa-solid fa-calendar-days"></i>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ftrbtm">
+				<div class="container-fluid">
+					<div class="ftrbtm-wrpr flex-i justify-between">
+						<ul class="ftrbtmList flex-i">
+							<li class="ftrbtmList__item">
+								<a href="privacy-policy.html" class="ftrbtmList__link">سياسة الخصوصية</a>
+							</li>
+							<li class="ftrbtmList__item">
+								<a href="terms.html" class="ftrbtmList__link">الشروط والأحكام</a>
+							</li>
+						</ul>
+						<p class="ftrbtm__p">كل الحقوق محفوظة لدي Alahlia Group</p>
+						<p class="ftrbtm__p">برمجة وتطوير بواسطة سكيلد تك</p>
+					</div>
+				</div>
+			</div>
+			<div class="btmtotop">
+				<a href="#" class="btmtotop__box1 flex-a r-50">
+					<div class="btmtotop__box1-mini flex-a r-50">
+						<i class="fa-brands fa-whatsapp"></i>
+					</div>
+					<div class="btmtotop__box1tab">
+						<i class="fa-solid fa-caret-left"></i>
+						Whatsapp
+					</div>
+				</a>
+				<a href="#" class="btmtotop__box2 flex-a r-50">
+					<i class="fa-solid fa-arrow-up"></i>
+				</a>
+			</div>
+		</footer>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" crossorigin="anonymous"
+		referrerpolicy="no-referrer"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="assets/js/public/effect-slicer.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="assets/js/revolution.min.js"></script>
+	<script src="assets/js/public/revolution.min.js"></script>
+	<script src="assets/js/public/scripts.js"></script>
+	<script src="assets/js/private/banner.js"></script>
+	<script src="assets/js/private/header4.js"></script>
+	<script src="assets/js/private/theme1-home-branches1.js"></script>
+	<script src="assets/js/private/theme1-home-services4.js"></script>
+	<script src="assets/js/private/theme1-home-clients1.js"></script>
+	<script src="assets/js/private/theme1-home-team1.js"></script>
+	<script src="assets/js/private/theme1-home-faq1.js"></script>
+	<script src="assets/js/private/theme1-home-footer1.js"></script>
+	<script src="assets/js/private/theme1-blog-related1.js"></script>
+</body>
+
+</html>

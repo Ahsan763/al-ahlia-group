@@ -1,0 +1,25 @@
+.swiper1{
+    width: 100% !important;
+    height: 80vh !important;
+}
+.bnnarr{
+    width: 55px;
+    height: 55px;
+    background-color: var(--main);
+    color: var(--white);
+    font-size: 1.2rem;
+}
+.bnnarr:hover{
+    background-color: transparent;
+    color: var(--main);
+}
+@media(max-width:767px){
+    .swiper1{
+        height: 65vh !important;
+    }
+    .bnnarr{
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+}

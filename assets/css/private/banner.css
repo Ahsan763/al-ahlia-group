@@ -1,0 +1,31 @@
+.swiper1__hd{
+    font-size: 26px;
+    position: absolute;
+    z-index: 99;
+    bottom: 50px;
+    right: 40px;
+    color: #fff;
+    font-weight: 700;
+}
+@media(max-width:1399px){
+    .swiper1__hd {
+        font-size: 22px;
+    }
+}
+@media(max-width:1199px){
+    .swiper1__hd {
+        font-size: 20px;
+    }
+    .bnnarr {
+        width: 45px !important;
+        height: 45px !important;
+        font-size: 0.8rem;
+    }
+}
+@media(max-width:539px){
+    .swiper1__hd{
+        font-size: 20px;
+        bottom: 40px;
+        right: 20px;
+    }
+}

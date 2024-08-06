@@ -1,0 +1,230 @@
+:root{
+    --main: #B52429;
+    --contrast: #FFEAEA;
+    --second-color: #D38787;
+    --third-color: #3B3B3B;
+    --fourth-color: #EFD9A7;
+    --fivth-color: #76CAFD;
+}
+body{
+    font-family: var(--cairo);
+}
+.servsPagehdngbox{
+    margin: 0 auto 60px auto;
+    width: fit-content;
+    padding: 20px 75px;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+    z-index: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--second-color);
+    background-color: var(--contrast);
+}
+.servsPagebanner{
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 470px;
+    z-index: 0;
+}
+.servsPagebanner__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.servsPagebanner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.5);
+}
+.servsPage-wrpr{
+    position: relative;
+    top: -130px;
+}
+.servsPagecntnt{
+    padding: 50px 100px 0 100px;
+    border-radius: 50px;
+    background-color: var(--white);
+}
+.servsPagecntnt-wrpr{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 65px;
+    column-gap: 1.9%;
+}
+.servsPageCrd{
+    width: 23.5%;
+    height: 360px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 0;
+
+}
+.servsPageCrd__link{
+    position: absolute;
+    background-color: var(--main);
+    border-radius: 40px;
+}
+.servsPageCrd__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.servsPageCrd__link{
+    padding: 13px 40px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    width: 180px;
+    justify-content: center;
+    color: var(--white);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.servsPageCrd__link span{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.servsPageCrd__link i{
+    font-size: 1.1rem;
+}
+.servsPageCrd__link:hover{
+    color: var(--white);
+}
+@media(max-width:1799px){
+    .servsPage-wrpr{
+        top: -100px;
+    }
+    .servsPagebanner {
+        height: 400px;
+        z-index: 0;
+    }
+    .servsPagecntnt {
+        padding: 40px 85px 0 85px;
+    }
+    .servsPagehdngbox {
+        margin: 0 auto 40px auto;
+        padding: 20px 65px;
+        font-size: 1.1rem;
+    }
+}
+@media(max-width:1599px){
+    .servsPage-wrpr{
+        top: -80px;
+    }
+    .servsPagebanner{
+        height: 370px;
+    }
+    .servsPagecntnt{
+        padding: 35px 60px 0 60px;
+        border-radius: 40px;
+    }
+}
+@media(max-width:1399px){
+    .servsPage-wrpr{
+        top: -70px;
+    }
+    .servsPagecntnt{
+        padding: 30px 40px 0 40px;
+        border-radius: 40px;
+    }
+    .servsPageCrd {
+        height: 300px;
+    }
+    .servsPageCrd__link {
+        padding: 10px 30px;
+        column-gap: 5px;
+        width: 150px;
+        bottom: -22px;
+    }
+    .servsPageCrd__link i {
+        font-size: 1rem;
+    }
+    .servsPageCrd__link span{
+        font-size: 0.9rem;
+    }
+    .servsPagehdngbox {
+        margin: 0 auto 30px auto;
+        padding: 15px 55px;
+        font-size: 1.1rem;
+    }
+}
+@media(max-width:1199px){
+    .servsPagebanner{
+        height: 270px;
+    }
+    .servsPage-wrpr{
+        top: -60px;
+    }
+    .servsPagecntnt{
+        padding: 25px 30px 0 30px;
+        border-radius: 25px;
+    }
+    .servsPageCrd {
+        height: 250px;
+    }
+    .servsPagecntnt-wrpr {
+        row-gap: 45px;
+        column-gap: 1.9%;
+    }
+    .servsPageCrd,
+    .servsPageCrd__img {
+        border-radius: 10px;
+    }
+}
+@media(max-width:1023px){
+    .servsPageCrd{
+        width: 32%;
+    }
+    .servsPagehdngbox {
+        margin: 0 auto 20px auto;
+        padding: 13px 45px;
+        font-size: 0.9rem;
+    }
+    .servsPageCrd__link i {
+        font-size: 0.85rem;
+    }
+    .servsPageCrd__link span {
+        font-size: 0.7rem;
+    }
+}
+@media(max-width:767px){
+    .servsPageCrd{
+        width: 49%;
+    }
+    .servsPagebanner{
+        height: 200px;
+    }
+    .servsPage-wrpr{
+        top: -50px;
+    }
+}
+@media(max-width:539px){
+    .servsPageCrd{
+        width: 100%;
+        height: 280px;
+    }
+    .servsPage-wrpr{
+        top: -40px;
+    }
+    .servsPagecntnt {
+        padding: 25px 20px 0 20px;
+    }
+}
+.dark .servsPagecntnt{
+    background-color: var(--dark-background-color1);
+}
+.dark .servsPageCrd__link,
+.dark .servsPagehdngbox{
+    background-color: var(--dark-background-color2);
+    color: var(--white);
+}

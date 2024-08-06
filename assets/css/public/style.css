@@ -1,0 +1,76 @@
+/* Genral Styling Start */
+@import url('flaticon.css');
+
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: var(--font-medium);
+  margin-inline: auto;
+}
+:root{
+  /* font size */
+  --font-small: 14px;
+  --font-medium: 16px;
+  --font-big: 18px;
+  /* Font Family */
+  --tajawal: "Tajawal", Arial, sans-serif;
+  --libre:  'Libre Baskerville', Arial, sans-serif;
+  --dubai:  'Dubai', Arial, sans-serif;
+  --nunito-sans : 'Nunito Sans', sans-serif;
+  --lora: 'Lora', sans-serif ;
+  --lato: 'Lato', sans-serif;
+  --dm-sans: 'DM Sans', sans-serif;
+  --gilroy: 'Gilroy', sans-serif;
+  --cairo: 'Cairo', sans-serif;
+  /* paragraph colors */
+  --para-black: #000;
+  --para-mid-black: #151515;
+  --para-charcoal-grey: #404040;
+  --para-turquoise-blue: #4BCFFD;
+  --paragraph-color: #4f4f4f;
+  --pearl:#EFF2F3;
+  /* text color */
+  --text-turquoise-blue: #4BCFFD;
+  --text-white: #fff;
+  --text-black: #000;
+  --text-mid-black: #151515;
+  --text-charcoal-grey: #404040;
+  --text-pearl:#EFF2F3;
+  /* general Color */
+  --white: #fff;
+  --black: #000;
+  --mid-black: #151515;
+  --pearl:#EFF2F3;
+  --charcoal-grey: #3B3C3C;
+  --turquoise-blue: #4BCFFD;
+  /* dark mode */
+  --dark-background-color1: #15212D;
+  --dark-background-color2: #1A2A3B;
+  --dark-border-color:#343434;
+  --dark-para-color: #cfcfcf;
+  --light-grey: #BFBFBF;
+}
+body{
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  position: relative;
+  font-family: var(--tajawal);
+  overflow-x: hidden !important;
+}
+input,
+button{
+  border: none;
+  outline: none;
+}
+body.dark{
+  background-color: var(--dark-background-color1);
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+  display: none !important;
+}

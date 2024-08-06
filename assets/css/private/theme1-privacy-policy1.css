@@ -1,0 +1,206 @@
+:root{
+    --main: #B52429;
+    --contrast: #FFEAEA;
+    --second-color: #D38787;
+    --third-color: #3B3B3B;
+    --fourth-color: #EFD9A7;
+    --fivth-color: #76CAFD;
+    --grey: #535353;
+}
+body{
+    font-family: var(--cairo);
+}
+.prvPlcybanner{
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 450px;
+    z-index: 0;
+    background-color: var(--contrast);
+}
+.prvPlcywrpr{
+    position: relative;
+    top: -120px;
+}
+.prvPlcycntnt{
+    padding: 60px 65px 0 65px;
+    border-radius: 50px;
+    background-color: var(--white);
+    position: relative;
+    z-index: 0;
+}
+.prvPlcycntnt__h{
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    font-weight: bold;
+    color: var(--second-color);
+}
+.prvPlcycntnt__p{
+    font-size: 1.1rem;
+    line-height: 2.5;
+    color: var(--grey);
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.prvPlcycntnt__p:nth-last-child(1){
+    margin-bottom: 0;
+}
+.prvPlcycntnttab{
+    padding: 20px 47px;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+    background-color: var(--white);
+    border-radius: 15px 15px 0 0;
+}
+.prvPlcycntnttab__h{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.prvPlcycntnttab-wrpr{
+    column-gap: 10px;
+}
+.prvPlcycntnttab-wrpr span{
+    color: var(--second-color);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.prvPlcycntnttab-wrpr p{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--grey);
+}
+@media(max-width:1799px){
+    .prvPlcywrpr{
+        top: -90px;
+    }
+    .prvPlcybanner {
+        height: 390px;
+    }
+    .prvPlcycntnt {
+        padding: 46px 50px 0 50px;
+        border-radius: 40px;
+    }
+    .prvPlcycntnt__h {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+    .prvPlcycntnt__p{
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+}
+@media(max-width:1599px){
+    .prvPlcywrpr{
+        top: -80px;
+    }
+    .prvPlcybanner{
+        height: 370px;
+    }
+    .prvPlcycntnt{
+        padding: 35px 60px 0 60px;
+        border-radius: 40px;
+    }
+    .prvPlcycntnt__h {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+    .prvPlcycntnt__p {
+        font-size: 0.9rem;
+    }
+}
+@media(max-width:1399px){
+    .prvPlcywrpr{
+        top: -70px;
+    }
+    .prvPlcycntnt{
+        padding: 30px 40px 0 40px;
+        border-radius: 40px;
+    }
+    .prvPlcycntnttab {
+        padding: 16px 36px;
+    }
+    .prvPlcycntnttab__h {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    .prvPlcycntnttab-wrpr span {
+        font-size: 0.8rem;
+    }
+    .prvPlcycntnttab-wrpr p {
+        font-size: 0.8rem;
+    }
+}
+@media(max-width:1199px){
+    .prvPlcybanner{
+        height: 270px;
+    }
+    .prvPlcywrpr{
+        top: -60px;
+    }
+    .prvPlcycntnt{
+        padding: 25px 30px 0 30px;
+        border-radius: 25px;
+    }
+}
+@media(max-width:1023px){
+    .prvPlcywrpr{
+        top: -50px;
+    }
+}
+@media(max-width:767px){
+    .prvPlcybanner{
+        height: 200px;
+    }
+    .prvPlcywrpr{
+        top: -40px;
+    }
+}
+@media(max-width:539px){
+    .prvPlcywrpr{
+        top: -30px;
+    }
+    .prvPlcybanner {
+        height: 170px;
+    }
+    .prvPlcycntnt__h {
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+    }
+    .prvPlcycntnt {
+        padding: 20px 15px 0 15px;
+        border-radius: 25px;
+    }
+    .prvPlcycntnt__p {
+        font-size: 0.75rem;
+        line-height: 2;
+    }
+    .prvPlcycntnttab{
+        width: 60%;
+    }
+    .prvPlcycntnttab__h {
+        font-size: 0.9rem;
+    }
+    .prvPlcycntnttab {
+        padding: 12px 19px;
+    }
+}
+.dark .prvPlcycntnttab,
+.dark .prvPlcycntnt{
+    background-color: var(--dark-background-color1);
+}
+.dark .prvPlcybanner{
+    background-color: var(--dark-background-color2);
+}
+.dark .prvPlcycntnt__h{
+    color: var(--second-color);
+}
+.dark .prvPlcycntnt__p,
+.dark .prvPlcycntnttab-wrpr span,
+.dark .prvPlcycntnttab-wrpr p,
+.dark .prvPlcycntnttab__h{
+    color: var(--white);
+}
